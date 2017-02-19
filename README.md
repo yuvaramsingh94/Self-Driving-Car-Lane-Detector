@@ -54,7 +54,7 @@ jupyter is used to run this program
   ## Areas to improve
        * apply filters like Kalman filter , particle filter to keep track of the lane line 
        * Image stabilization algorithm to remove noises
-       * prediction of curve in the lane line
+       * prediction of curve in the lane line 
        
   
 
