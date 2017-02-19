@@ -11775,7 +11775,7 @@ div#notebook {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Lane finding program</span>
@@ -11788,7 +11788,29 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&#39;&#39;&#39;inspirations</span>
+<span class="sd">http://flippidybits.com</span>
+<span class="sd">http://stackoverflow.com/questions/23849097/numpy-np-apply-along-axis-function-speed-up</span>
+<span class="sd">http://stackoverflow.com/questions/21812358/numpy-apply-along-axis-function</span>
+<span class="sd">http://stackoverflow.com/questions/890128/why-are-python-lambdas-useful</span>
+
+<span class="sd">thanks to all these guys for helping this community</span>
+
+
+<span class="sd">&#39;&#39;&#39;</span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">moviepy.editor</span> <span class="k">import</span> <span class="n">VideoFileClip</span>
@@ -11802,11 +11824,11 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">matplotlib.image</span> <span class="k">as</span> <span class="nn">mpimg</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#import matplotlib.pyplot as plt</span>
+<span class="c1">#import matplotlib.image as mpimg</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">cv2</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
@@ -11819,11 +11841,11 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Performs simple linear regression on a set of lines.</span>
-<span class="k">def</span> <span class="nf">lines_linreg</span><span class="p">(</span><span class="n">lines_array</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">linesValues</span><span class="p">(</span><span class="n">lines_array</span><span class="p">):</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">lines_array</span><span class="p">[:,</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">]],</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">lines_array</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span><span class="p">))[</span><span class="mi">0</span><span class="p">]</span>
     <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">lines_array</span><span class="p">[:,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">]],</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">lines_array</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span><span class="p">))[</span><span class="mi">0</span><span class="p">]</span>
     <span class="c1">#print (&quot;this is  the shape of x: &quot;,x.shape)</span>
@@ -11841,7 +11863,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Takes an array of lines and gives back lines which have a valid slope, given a range.</span>
@@ -11881,7 +11903,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
@@ -11968,7 +11990,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
@@ -12003,7 +12025,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
@@ -12060,7 +12082,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">process_image1</span><span class="p">(</span><span class="n">image</span><span class="p">):</span>
@@ -12121,7 +12143,7 @@ div#notebook {
         <span class="c1"># the linesRight is of shape (:,1,4) which has x1,y1,x2,y2 </span>
         
         <span class="n">lines_right</span> <span class="o">=</span> <span class="n">slope_filter</span><span class="p">(</span><span class="n">linesRight</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="o">.</span><span class="mi">5</span><span class="p">,</span> <span class="o">.</span><span class="mi">9</span><span class="p">)</span> <span class="c1"># used to filter the points which lies between the range 0.5-0.9</span>
-        <span class="n">right_x</span><span class="p">,</span> <span class="n">right_y</span><span class="p">,</span> <span class="n">right_m</span><span class="p">,</span> <span class="n">right_c</span> <span class="o">=</span> <span class="n">lines_linreg</span><span class="p">(</span><span class="n">lines_right</span><span class="p">)</span> <span class="c1"># find the x , y values with respected to the desired m ,and c values</span>
+        <span class="n">right_x</span><span class="p">,</span> <span class="n">right_y</span><span class="p">,</span> <span class="n">right_m</span><span class="p">,</span> <span class="n">right_c</span> <span class="o">=</span> <span class="n">linesValues</span><span class="p">(</span><span class="n">lines_right</span><span class="p">)</span> <span class="c1"># find the x , y values with respected to the desired m ,and c values</span>
         
         
     <span class="k">except</span> <span class="p">:</span>
@@ -12131,7 +12153,7 @@ div#notebook {
     <span class="k">try</span><span class="p">:</span>
         <span class="n">linesLeft</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">HoughLinesP</span><span class="p">(</span><span class="n">roiImageLeft</span><span class="p">,</span> <span class="n">rho</span><span class="p">,</span> <span class="n">theta</span><span class="p">,</span> <span class="n">threshold</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([]),</span> <span class="n">minLineLength</span><span class="o">=</span><span class="n">min_line_len</span><span class="p">,</span> <span class="n">maxLineGap</span><span class="o">=</span><span class="n">max_line_gap</span><span class="p">)</span>
         <span class="n">lines_left</span> <span class="o">=</span> <span class="n">slope_filter</span><span class="p">(</span><span class="n">linesLeft</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">)</span>
-        <span class="n">left_x</span><span class="p">,</span> <span class="n">left_y</span><span class="p">,</span> <span class="n">left_m</span><span class="p">,</span> <span class="n">left_c</span> <span class="o">=</span> <span class="n">lines_linreg</span><span class="p">(</span><span class="n">lines_left</span><span class="p">)</span>
+        <span class="n">left_x</span><span class="p">,</span> <span class="n">left_y</span><span class="p">,</span> <span class="n">left_m</span><span class="p">,</span> <span class="n">left_c</span> <span class="o">=</span> <span class="n">linesValues</span><span class="p">(</span><span class="n">lines_left</span><span class="p">)</span>
     <span class="k">except</span> <span class="p">:</span>
         <span class="k">pass</span>
     <span class="c1"># find the top,bottom most point to draw lines</span>
@@ -12163,7 +12185,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">white_output</span> <span class="o">=</span> <span class="s1">&#39;FinalOutput.mp4&#39;</span>
@@ -12195,7 +12217,7 @@ div#notebook {
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>100%|███████████████████████████████████████████████████████████████████████████████▋| 221/222 [00:14&lt;00:00, 15.50it/s]
+<pre>100%|███████████████████████████████████████████████████████████████████████████████▋| 221/222 [00:16&lt;00:00, 13.45it/s]
 </pre>
 </div>
 </div>
@@ -12207,7 +12229,7 @@ div#notebook {
 <pre>[MoviePy] Done.
 [MoviePy] &gt;&gt;&gt;&gt; Video ready: FinalOutput.mp4 
 
-Wall time: 16.2 s
+Wall time: 18.8 s
 </pre>
 </div>
 </div>
@@ -12231,7 +12253,7 @@ Wall time: 16.2 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
@@ -12250,7 +12272,7 @@ Wall time: 16.2 s
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[22]:</div>
+<div class="prompt output_prompt">Out[12]:</div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
