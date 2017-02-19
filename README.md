@@ -45,14 +45,14 @@ jupyter is used to run this program
                 
  this program has some inspiration from http://flippidybits.com . thanks !!!!!!!
                 
-  ## Potential shortcoming
+## Potential shortcoming
       the shortcomes are
        * program is affected by the quality of the input video . presence of noise can cause the program to make wrong predictions
        * the Region of interest is not dynamic . it is fixed . more flexible roi should be used
        * discontinuity in the lane line cause jitter to the annotation
        * difference in the daylight , weather condition , sudden change in road color can affect the predictions
        
-  ## Areas to improve
+## Areas to improve
   
        * apply filters like Kalman filter , particle filter to keep track of the lane line 
        * Image stabilization algorithm to remove noises
