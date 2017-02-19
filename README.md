@@ -31,7 +31,11 @@ jupyter is used to run this program
     2.breakdown the video frames into individual image frames
     3.on that image fram , apply these following techniques
                 1.convert from BGR image to grayscale image
-                2.
+                2.apply gaussian_blur to the grayscale image
+                3.using canny edge detection , find the edges in the given image
+                4.define a region of interest (roi) for each side (Left and Right) and apply them to the image which has the edges marked
+                
+                
   
 
 
