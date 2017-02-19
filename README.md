@@ -43,7 +43,7 @@ jupyter is used to run this program
                 11. store this final image as a video file
                 12. use ipython.display to show the video on your notebook 
                 
-          
+ this program has some inspiration from http://flippidybits.com . thanks !!!!!!!
                 
                 
   
