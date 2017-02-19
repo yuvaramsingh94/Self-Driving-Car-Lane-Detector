@@ -34,7 +34,7 @@ jupyter is used to run this program
                 2. apply gaussian_blur to the grayscale image
                 3. using canny edge detection , find the edges in the given image
                 4. define a region of interest (roi) for each side (Left and Right) and apply them to the image which has the edges marked
-                5. apply hough transfom to the roi image separately (for Left and Right) . hough transform convert the dots in the image spaces to lines and gives us an output of numpy array with the end points of the line which joins the points in the image space
+                5. apply hough transform to the roi image separately (for Left and Right) . hough transform convert the dots in the image spaces to lines and gives us an output of numpy array with the end points of the line which joins the points in the image space
                 6. try except block is used because , sometime we might get some frame on which we cannot compute any of our transformations . these frames might return error like math error , zero division error . it is a better practice to wrap them in a try,catch block to avoid unexpected errors
                 7. find the common slope of the lines found on the right and left image separately 
                 8. find the x,y of the points belonging to a common slope m , intercept c
